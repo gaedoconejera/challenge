@@ -1,4 +1,3 @@
-Claro, aquí tienes una versión más ordenada y elegante para tu `README.md`:
 
 ```markdown
 # Challenge
