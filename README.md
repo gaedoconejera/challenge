@@ -120,9 +120,8 @@ Para probar la API, se recomienda usar Postman. La colección de Postman está d
 4. **Buscar usuario por ID** (Requiere token)
    ```bash
    curl --location --request GET 'localhost:8090/api/usuarios/usuarios/1' \
-   --data-urlencode 'user=frontendapp' \
-   --data-urlencode 'password=12345' \
-   --data-urlencode 'grand_type=password'
+   --header 'Content-Type: application/json' \
+   --header 'Authorization: Bearer <TOKEN>' \
    ```
 
 5. **Obtener token** (Autenticación básica de usuario)
