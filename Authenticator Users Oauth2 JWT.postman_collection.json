@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "d6ee08df-bcc1-4bcb-87e8-5126c22fc760",
+		"name": "Authenticator Users Oauth2 JWT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "21297247",
+		"_collection_link": "https://warped-sunset-320140.postman.co/workspace/My-Workspace~4baace75-de88-4eb4-835d-a0807a34b9ed/collection/21297247-d6ee08df-bcc1-4bcb-87e8-5126c22fc760?action=share&source=collection_link&creator=21297247"
+	},
+	"item": [
+		{
+			"name": "GetAllUser",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8090/api/usuarios/usuarios/"
+			},
+			"response": []
+		},
+		{
+			"name": "InsertUser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhbmRyZXMiLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiYXBlbGxpZG8iOiJBZWRvIiwiY29ycmVvIjoiY2FlZG9AbWFpbC5jb20iLCJleHAiOjE3MjkwOTM5MzcsIm5vbWJyZSI6IkNyaXN0b2JhbCIsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiOGZhNTI1MjgtY2NiYy00NjIyLWIwZTUtZTVjYWM1YjI3OWFmIiwiY2xpZW50X2lkIjoiZnJvbnRlbmRhcHAifQ.Dq0SZ6jvUeW3YWlyb2G90OL3IZRIwYz0zXF7Kl3LHAA"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fechaCreacion\": null,\r\n    \"fechaActualizacion\": null,\r\n    \"username\": \"valentina\",\r\n    \"password\": \"valentina123\",\r\n    \"enabled\": true,\r\n    \"nombre\": \"Perro Aedo\",\r\n    \"apellido\": \"AedoTest\",\r\n    \"email\": \"test@mail.com\",\r\n    \"phones\": [\r\n        { \r\n            \"id\": 1,\r\n            \"number\": 56505213,\r\n            \"citycode\": 9,\r\n            \"countryCode\": 56\r\n        },\r\n        {\r\n              \"id\": 2,\r\n            \"number\": 56505213,\r\n            \"citycode\": 9,\r\n            \"countryCode\": 56\r\n        }\r\n    ],\r\n    \"roles\": [\r\n        {\r\n            \"id\": 1,\r\n            \"nombre\": \"ROLE_USER\"\r\n        },\r\n         {\r\n            \"id\": 2,\r\n            \"nombre\": \"ROLE_ADMIN\"\r\n        }\r\n    ]\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8090/api/usuarios/usuarios/"
+			},
+			"response": []
+		},
+		{
+			"name": "Update User Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhbmRyZXMiLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiYXBlbGxpZG8iOiJBZWRvIiwiY29ycmVvIjoiY2FlZG9AbWFpbC5jb20iLCJleHAiOjE3MTQzNjkzMjAsIm5vbWJyZSI6IkNyaXN0b2JhbCIsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiMDc2Y2RhYTMtOTA1NC00ODVkLWFlNDktYWVlZDk1YTRmMGE1IiwiY2xpZW50X2lkIjoiZnJvbnRlbmRhcHAifQ.uB5hpOO1qVdx-OEdJnJDfP_ZtMXz34d8bOV9_axi6oE"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fechaCreacion\": \"2024-04-29T04:43:09.739+00:00\",\r\n    \"fechaActualizacion\": null,\r\n    \"username\": \"subAdmin\",\r\n    \"password\": \"$2a$10$NZp9GgbTPYFft6oPjZyLXOeIoGb.0WJGdqOSwqNjLzI2pfLXMJYsm\",\r\n    \"enabled\": true,\r\n    \"nombre\": \"Gustavo\",\r\n    \"apellido\": \"Aedo\",\r\n    \"email\": \"subAdmin@admin.com\",\r\n    \"phones\": [\r\n        { \r\n            \"id\": 1,\r\n            \"number\": 56505213,\r\n            \"citycode\": 9,\r\n            \"countryCode\": 56\r\n        },\r\n        {\r\n              \"id\": 2,\r\n            \"number\": 56505213,\r\n            \"citycode\": 9,\r\n            \"countryCode\": 56\r\n        }\r\n    ],\r\n    \"roles\": [\r\n        {\r\n            \"id\": 1,\r\n            \"nombre\": \"ROLE_USER\"\r\n        },\r\n         {\r\n            \"id\": 2,\r\n            \"nombre\": \"ROLE_ADMIN\"\r\n        }\r\n    ]\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8090/api/usuarios/usuarios/1"
+			},
+			"response": []
+		},
+		{
+			"name": "GetByIdUser",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "frontendappkj",
+						"password": "12345"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user",
+							"value": "frontendapp",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "grand_type",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": "localhost:8090/api/usuarios/usuarios/1"
+			},
+			"response": []
+		},
+		{
+			"name": "getToken",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "frontendapp",
+						"password": "12345"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "andres",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": "localhost:8090/api/security/oauth/token"
+			},
+			"response": []
+		}
+	]
+}
