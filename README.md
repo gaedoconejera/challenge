@@ -22,6 +22,8 @@ Para levantar los servicios, asegúrate de tener instalados los siguientes:
 ## Instrucciones para Levantar los Servicios
 Se recomienda levantar el proyecto a través de Eclipse o IntelliJ en el siguiente orden:
 
+
+   ```
 1. **Generar JAR de la librería commons de Model de Usuarios**
    ```bash
    cd ./springboot-servicio-usuarios-commons
