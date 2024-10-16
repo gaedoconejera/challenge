@@ -140,5 +140,3 @@ Para probar la API, se recomienda usar Postman. La colección de Postman está d
 
 Asegúrate de reemplazar `<TOKEN>` con el token adecuado para las solicitudes que lo requieran.
 ```
-
-Este formato es más claro y organizado, facilitando la comprensión y el uso del README.
